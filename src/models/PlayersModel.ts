@@ -1,9 +1,18 @@
 export class Player {
-    username: string
-    password: string
+    full_name: string;
+    player_name: string;
+    createdAt: Date;
+    updatedAt: Date;
 
-    constructor(username?: string, password?: string) {
-        this.username = username ? username : ''
-        this.password = password ? password : ''
+    constructor(full_name: string, player_name: string, createdAt: Date, updatedAt: Date) {
+        this.full_name = full_name;
+        this.player_name = player_name;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
+}
+
+export interface PlayerResponse {
+    id: number;
+    attributes: Player;
 }

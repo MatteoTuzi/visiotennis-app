@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Dashboard from './views/Dashboard.vue'
 import PlayersView from '@/views/players/PlayersView.vue'
+import GamesView from '@/views/games/GamesView.vue'
 import Login from './views/Login.vue'
 
 const routes: RouteRecordRaw[] = [
@@ -22,6 +23,11 @@ const routes: RouteRecordRaw[] = [
     name: 'Players',
     component: PlayersView,
   },
+  {
+    path: '/games',
+    name: 'Games',
+    component: GamesView,
+  }
 ]
 
 const router = createRouter({

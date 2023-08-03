@@ -17,7 +17,7 @@
       "@/*": ["./src/*"]
     },
     "allowJs": true,
-    "types": ["vite/client", "vue3-toastify/global"]
+    "types": ["vite/client", "node"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "node_modules/@json2csv/plainjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
